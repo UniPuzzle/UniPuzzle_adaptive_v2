@@ -814,13 +814,16 @@ img {
 
 .mtck-section .link {
   font-weight: normal;
+  min-height: 100%;
 }
 
 .mtck__cadr {
   display: flex;
+  max-width: 24%;
   align-items: center;
-
-  /* background-color: #4445457d; */
+  /* background-color: #ebf3ff; */
+  /* border-left: 1px solid; */
+  /* border-right: 1px solid; */
 }
 
 .mtck__img {
@@ -830,24 +833,48 @@ img {
 }
 
 .mtck-wrap {
-  width: 150px;
-  height: 200px;
+  /* width: 187.5px;
+  height: 250px; */
   /* margin: 7px auto; */
+  width: 225px;
+  height: 300px;
   position: relative;
 }
 
 .mtck__content {
   /* width: 65%; */
 
-  padding: 10px 20px 10px 20px;
+  padding: 10px 10px 10px 20px;
 }
 .mtck__content > .aside__title {
-  text-align: center;
+  /* text-align: center; */
+  min-height: 60px;
 }
 
 .mtck__card-wrap {
   display: flex;
+  justify-content: space-around;
+  margin-top: 35px;
 }
+
+.mtck__logo-mtckrgb::before {
+  width: 31px;
+  height: 49px;
+  margin-left: 5px;
+  margin-right: 13px;
+  background-image: url(../images/sec-mtck/mtck-logo.svg);
+}
+@media screen and (min-width: 480px) {
+  .mtck__logo-mtckrgb::before {
+    width: 48px;
+    height: 78px;
+    margin-right: 35px;
+    margin-left: 60px;
+  }
+}
+
+/* .aside__title-mtck {
+} */
 
 /* ============section PUZZLE CLASSICS=============  */
 
@@ -870,7 +897,7 @@ img {
   margin-left: 60px;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 
 .classic__logo-classicsrgb::before {
